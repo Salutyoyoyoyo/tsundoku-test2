@@ -24,6 +24,17 @@ services:
     networks:
       - dev
 
+  nextjs:
+    build: ./docker/nextjs/
+    container_name: nextjs
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end:/app
+      - /app/node_modules
+    networks:
+      - dev
+
   postgres:
     build: ./docker/db/postgres/
     container_name: postgres
