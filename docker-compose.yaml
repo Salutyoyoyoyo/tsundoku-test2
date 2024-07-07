@@ -25,7 +25,9 @@ services:
       - dev
 
   nextjs:
-    build: ./docker/nextjs/
+    build:
+      context: .
+      dockerfile: docker/nextjs/Dockerfile
     container_name: nextjs
     ports:
       - "3000:3000"
