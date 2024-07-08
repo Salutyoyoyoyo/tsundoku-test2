@@ -1,8 +1,5 @@
-### Description
-Pull request template
+### A remplir
 
   - [ ] Documentation
   - [ ] CHANGELOG.md
   - [ ] Temps passé
-
-closes #
